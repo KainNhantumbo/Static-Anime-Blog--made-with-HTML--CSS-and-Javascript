@@ -1,15 +1,35 @@
 .box-footer {
     width: 100%;
-    height: 50px;
+    height: auto;
     background-color: #232A2F;
     margin-top: 25px;
     border-top: 2px solid #DC7772;
-    box-shadow: -1px 1px 12px #D1D1D1;
-    text-align: center;
+    box-shadow: -1px 1px 5px #232A2F;
+}
+
+.box-ancoras {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ancoras-footer {
+    color: #ffff;
+    margin-top: px;
+    padding: 10px 0;
+}
+
+.ancoras-footer:hover {
+    color: #DC7772;
+    transition: 0.3s ease;
 }
 
 .text-footer {
-    margin-top: 15px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    font-size: 10pt;
     color: #ffff;
     letter-spacing: 0.9px;
+    text-align: center;
 }

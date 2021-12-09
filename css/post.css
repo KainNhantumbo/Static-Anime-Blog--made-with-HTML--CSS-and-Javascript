@@ -11,7 +11,21 @@ main {
     margin-top: 80px;
 }
 
+h1,h4{
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    color: #DC7772;
+}
+
 .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-principal {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -20,10 +34,6 @@ main {
     margin-left: 5%;
     border-radius: 7px;
     background-color: #FFFFFF;
-}
-
-.container-lateral {
-    max-width: 30%;
 }
 
 .imagem-grande {
@@ -57,7 +67,7 @@ main {
 
 .rows-head {
     width: 100%;
-    height: 15%;
+    height: auto;
     border-radius: 7px 7px 5px 5px;
     background-color: #DC7772;
     box-shadow: 1px 1px 5px #D1D1D1;
@@ -90,7 +100,7 @@ main {
 }
 
 .texto {
-    padding: 2%;
+    padding: 3%;
     text-align: justify;
     line-height: 1.8rem;
 }
@@ -109,7 +119,6 @@ main {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    
 }
 
 .links {
@@ -128,3 +137,38 @@ main {
     box-shadow: .5px .5px 12px #D1D1D1;
     transition: .5s ease;
 }
+
+/* ----------lateral------------ */
+
+.container-lateral {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+}
+
+.blocos-laterais {
+    max-width: 96%;
+    height: auto;
+    margin: 2%;
+    box-shadow: 1px 1px 5px #D1D1D1;
+    border-radius: 7px;
+}
+
+.rows_head-lateral {
+    width: 100%;
+    height: auto;
+    border-radius: 7px 7px 0px 0px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 5px #D1D1D1;
+    color: #DC7772;
+    font-size: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 20%;
+    padding: 2% 15px;
+    border-bottom: 3px solid #DC7772;
+}
+
