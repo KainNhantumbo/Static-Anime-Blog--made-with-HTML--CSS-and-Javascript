@@ -30,14 +30,14 @@ h4{
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 60%;
+    width: 60%;
     margin-left: 5%;
     border-radius: 7px;
     background-color: #FFFFFF;
 }
 
 .imagem-grande {
-    width: 96%;
+    max-width: 96%;
     border-radius: 7px;
     margin: 2%;
     box-shadow: 1px 1px 5px #D1D1D1;
@@ -81,7 +81,7 @@ h4{
 
 .rows-white {
     width: 100%;
-    height: 12%;
+    height: auto;
     font-size: 100%;
     padding: 1% 15px;
     font-size: 100%;
@@ -89,7 +89,7 @@ h4{
 
 .rows-dark {
     width: 100%;
-    height: 12%;
+    height: auto;
     background-color: #FAEBD7;
     padding: 1% 15px;
     font-size: 100%;
@@ -103,6 +103,16 @@ h4{
     padding: 3%;
     text-align: justify;
     line-height: 1.8rem;
+}
+
+strong {
+    font-weight: 600;
+}
+
+video {
+    max-width: 100%;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px #D1D1D1;
 }
 
 .descarregar {
@@ -142,6 +152,7 @@ h4{
 
 .container-lateral {
     width: 32%;
+    height: auto;
     display: flex;
     flex-direction: column;
     margin-left: 2%;
@@ -170,5 +181,10 @@ h4{
     letter-spacing: 20%;
     padding: 2% 15px;
     border-bottom: 3px solid #DC7772;
+}
+
+.flag_count-container {
+    max-width: 100%;
+    height: auto;
 }
 

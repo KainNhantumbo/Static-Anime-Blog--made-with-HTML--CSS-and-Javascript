@@ -104,6 +104,7 @@
         margin-right: 10%;
         padding-right: 60%;
         opacity: 0.9;
+        filter: blur(0.5);
     }
 
     .item {
