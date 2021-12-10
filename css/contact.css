@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #F3F5F9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    margin-top: 80px;
+}
+
+h1,h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.subtitulos {
+    margin-top: 20px;
+    margin-left: 3%;
+    font-size: 16pt;
+}
+
+.--subtitulos {
+    margin-top: 10px;
+    margin-left: 3%;
+    font-size: 14pt;
+    color: #232A2F;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-principal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+}
+
+.info-anime {
+    max-width: 96%;
+    height: auto;
+    margin: 2%;
+    box-shadow: 1px 1px 5px #D1D1D1;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+.rows-head {
+    width: 100%;
+    height: auto;
+    border-radius: 7px 7px 5px 5px;
+    background-color: #DC7772;
+    box-shadow: 1px 1px 5px #D1D1D1;
+    color: #FFFFFF;
+    font-size: 120%;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 20%;
+    padding: 1% 15px;
+}
+
+.texto {
+    padding: 0.8% 3%;
+    text-align: start;
+    line-height: 1.8rem;
+    font-size: 12pt;
+    margin-top: 1rem;
+}
+
+.container-form {
+    display: flex;
+    justify-content: start;
+    width: 90%;
+    margin: 0 5vw 5vw;
+}
+
+.form-mail {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+.input-box {
+    width: 350px;
+    height: 40px;
+    padding: 7px;
+    border: 2px solid #DC7772;
+    border-radius: 7px;
+    border-bottom-style:dotted;
+    
+}
+
+.input-box::placeholder, .input-mensagem::placeholder {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.input-box:hover, .submit-mail:hover, .input-mensagem:hover {
+    box-shadow: 1px 1px 7px #D1D1D1;
+}
+
+.input-mensagem {
+    height: auto;
+    padding: 7px;
+    border: 2px solid #DC7772;
+    border-radius: 7px;
+    border-bottom-style:dotted;
+}
+
+.submit-mail {
+    justify-self: center;
+    background-color: #DC7772;
+    color: #FFFFFF;
+    border-style: none;
+    padding: 5px;
+    border-radius: 7px;
+    line-height: 1.6rem;
+    font-weight: 500;
+    font-style: italic;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 447px) {
+    .container-form {
+        justify-content: center;
+    }
+
+    .input-box {
+        width: 90%;
+        height: auto;
+        padding: auto;
+    }
+
+    .input-box::placeholder {
+        font-size: 8pt;
+    }
+
+    .texto {
+        font-size: 10pt;
+    }
+
+    .input-mensagem {
+        width: 90%;
+    }
+
+    .input-mensagem::placeholder {
+        font-size: 8pt;
+    }
+}

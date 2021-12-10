@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Atualizar consoante o desenvolvimento -->
+    <meta name="author" content="Kain Nhantumbo">
+    <meta name="title" content="Contato">
+    <meta name="description" content="página de contato do site">
+    <meta name="keywords" content="contato, contato o site de animes, contact">
+
+    <link href="./images/favicon.png" rel="icon">
+    <link type="text/css" rel="stylesheet" href="./css/lib/normalize.css">
+    <link type="text/css" href="./css/navegacao.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./css/contact.css">
+    <link type="text/css" rel="stylesheet" href="./css/footer.css">
+    <script src="/script.js" defer></script>
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <nav class="navegacao">
+            <input type="checkbox" id="check" value="checked">
+            <label for="check" class="checkbtn">
+                <i><img class="icon" src="./images/menu.png" alt="menu_icon"> </i>
+            </label>
+
+            <label class="titulo">Yuusha-desu</label>
+
+            <ul class="lista-item">
+                <li class="item"><a class="link" href="./index.html">Início</a></li>
+                <li class="item"><a class="link" href="./animes-list.html">Lista de Animes</a></li>
+                <li class="item"><a class="link" href="./contact.html">Contato</a></li>
+                <li class="item"><a class="link" href="./about.html">Sobre</a></li>
+                <input type="search" class="search item" placeholder="Pesquisar...">
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <!-- Container 1 -->
+            <article class="container-principal">
+                <section class="info-anime">
+                    <h1 class="rows-head">
+                        Contato
+                    </h1>
+                    
+                    <p class="texto">
+                        Alguma questão a ser resolvida? Envie-me um e-mail, será respondido assim que possível.
+                    </p>
+
+                    <div class="container-form">
+                        <form class="form-mail">
+                            <p class="texto">
+                                Preencha o formulário de envio:
+                            </p>
+                            <input type="text" class="nome input-box" placeholder="Seu nome..." required>
+
+                            <input type="email" class="mail input-box" placeholder="Escreva o seu e-mail..." autocomplete="disabled" required>
+
+                            <input type="text" class="assunto input-box" placeholder="Escreva o assunto..." required>
+
+                            <textarea class="input-mensagem"  name="mensagem" cols="30" rows="10" aria-controls="disabled" placeholder="Escreva a sua mensagem aqui..." required></textarea>
+
+                            <a href="mailto:https://gmail.google.com/nhantumbok@gmail.com?&subject=assunto.value" target="_blank">
+                                <input class="submit-mail" type="submit" value="Enviar e-mail">
+                            </a>
+                        </form>
+                    </div>
+                </section>
+            </article>
+        </section> 
+    </main>
+    <footer>
+        <section class="box-footer">
+            <div class="box-ancoras">
+                <a class="ancoras-footer" href="./terms-of-use.html">
+                    Termos de Uso
+                </a>
+                <a class="ancoras-footer" href="./privacy-policy.html">
+                    Política de Privacidade
+                </a> 
+                <a class="ancoras-footer" href="./F.A.Q..html">
+                    F.A.Q.
+                </a>
+                <a class="ancoras-footer" href="./dmca.html">
+                    DMCA
+                </a>
+            </div>
+            <div class="text-footer">
+                Copyright © 2021 Yuusha-desu. Todos os Direitos Reservados.
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
