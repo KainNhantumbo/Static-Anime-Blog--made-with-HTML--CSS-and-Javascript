@@ -32,6 +32,11 @@ h1{
     background-color: #FFFFFF;
 }
 
+.preview-image:hover {
+    box-shadow: .5px .5px 15px #D1D1D1;
+    transition: .3s ease;
+}
+
 .info-anime {
     width: 96%;
     height: auto;
@@ -110,6 +115,41 @@ h1{
     border-radius: 7px;
 }
 
+.container-populares {
+    max-width: 96%;
+    height: auto;
+    padding: 7px;
+    box-shadow: 1px 1px 5px #D1D1D1;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.preview-image {
+    border-radius:5px;
+    width: 100px;
+    height: auto;
+}
+
+.texto-preview {
+    padding: 5px;
+    margin-top: 2%;
+    margin-left: 2vw;
+}
+
+.ancoras-laterais {
+    color: black;
+    margin-top: px;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.ancoras-laterais:hover {
+    color: #DC7772;
+    transition: 0.3s ease;
+}
+
 .rows_head-lateral {
     width: 100%;
     height: auto;
@@ -130,4 +170,31 @@ h1{
     height: auto;
     padding: 3%;
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 820px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container-principal {
+        width: 90%;
+    }
+
+    .container-lateral {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .texto {
+        text-align: start;
+    }
+
+    .rows-head {
+        font-size: 12pt;
+        padding: 7px;
+    }
 }

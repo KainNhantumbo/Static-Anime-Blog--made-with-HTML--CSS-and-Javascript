@@ -164,4 +164,8 @@
     .link {
         font-size: 8pt;
     }
+
+    .search::placeholder {
+        font-size: 8pt;
+    }
 }

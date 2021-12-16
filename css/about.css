@@ -38,7 +38,7 @@ h1,h2 {
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 90%;
+    width: 90%;
     margin-left: 5%;
     border-radius: 7px;
     background-color: #FFFFFF;
