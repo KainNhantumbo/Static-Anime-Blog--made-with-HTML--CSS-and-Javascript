@@ -1,7 +1,7 @@
 (function () {
-    window.addEventListener('load', construtorDeBloco);
+    window.addEventListener('load', construtorDeBlocoA);
 
-    function construtorDeBloco () {
+    function construtorDeBlocoA () {
         const containerLateral = document.querySelector('.container-lateral');
         const blocoLateral = document.createElement('div');
         blocoLateral.classList.add('blocos-laterais');
@@ -9,31 +9,54 @@
 
         const rowsHeadLateral = document.createElement('div');
         rowsHeadLateral.classList.add('rows_head-lateral');
-        rowsHeadLateral.innerHTML = 'Em Alta';
+        rowsHeadLateral.textContent = 'Recomendado';
         blocoLateral.appendChild(rowsHeadLateral);
 
-        construtor(blocoLateral);
-    }
+        construtor (blocoLateral,'./pages/Adachi-to-shimamura.html',
+        '../images/imagens-dos-posts/post1/img.miniatura.jpg',
+        `Adachi to Shimamura<br><br>Comédia, Romance, Yuri`
+        );
 
-    function construtor (blocoLateral) {
+        construtor (blocoLateral,'./pages/Adachi-to-shimamura.html',
+        '../images/imagens-dos-posts/post1/img.miniatura.jpg',
+        `Adachi to Shimamura<br><br>Comédia, Romance, Yuri`
+        );
+        
+        construtor (blocoLateral,'./pages/Adachi-to-shimamura.html',
+        '../images/imagens-dos-posts/post1/img.miniatura.jpg',
+        `Adachi to Shimamura<br><br>Comédia, Romance, Yuri`
+        );
+    } 
+
+    function construtor (blocoLateral, linkDaPostagem, linkDaimagem, textoDoLink) {
         const objData = {
-            nomeDoAnime: "Adachi to Shimamura",
-            linkDaPostagem: "#",
-            linkDaimagem: "#",
-            textoDoLink: "Nome do anome e descricao",
+            linkDaPostagem,
+            linkDaimagem,
+            textoDoLink,
         }
 
+        function verificaHrefLocation () {
+            const url = document.referrer;
+            const location = window.location.href;
+            
+            if (url === location) {
+                location.replace('/pages','');
+                objData.linkDaPostagem = location;
+            }
+        }
+        verificaHrefLocation();
+        
         const containerPopulares = document.createElement('div');
         containerPopulares.classList.add('container-populares');
         blocoLateral.appendChild(containerPopulares);
 
         const linkDaPostagem1 = document.createElement('a');
-        linkDaPostagem1.href = '#';
+        linkDaPostagem1.href = objData.linkDaPostagem;
         linkDaPostagem1.setAttribute('alt','preview image');
         containerPopulares.appendChild(linkDaPostagem1);
 
         const previewImage = document.createElement('img');
-        previewImage.src = '#';
+        previewImage.src = objData.linkDaimagem;
         previewImage.classList.add('preview-image');
         linkDaPostagem1.appendChild(previewImage);
 
@@ -43,8 +66,8 @@
 
         const linkDaPostagem2 = document.createElement('a');
         linkDaPostagem2.classList.add('ancoras-laterais');
-        linkDaPostagem2.href = '#';
-        linkDaPostagem2.innerHTML = `Adachi to Shimamura<br><br>Comédia, Romance, Yuri`;
+        linkDaPostagem2.href = objData.linkDaPostagem;
+        linkDaPostagem2.innerHTML = objData.textoDoLink;
         textPreview.appendChild(linkDaPostagem2);
     }
 })();

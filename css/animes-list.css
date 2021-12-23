@@ -99,10 +99,11 @@ h1{
 
 .container-lateral {
     width: 32%;
-    height: auto;
+    height: max-content;
     display: flex;
     flex-direction: column;
     margin-left: 2%;
+    padding-bottom: .5rem;
     border-radius: 7px;
     background-color: #FFFFFF;
 }

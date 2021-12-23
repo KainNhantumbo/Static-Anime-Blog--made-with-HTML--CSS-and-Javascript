@@ -25,7 +25,7 @@
 
 .titulo {
     color:#D1AB7D;
-    font-size: 16pt;
+    font-size: 1.3rem;
     margin: 13px 0px 5px 30px;
     font-weight: 600;
     position: absolute;
@@ -38,7 +38,7 @@
 
 .item {
     display: inline-block;
-    line-height: 55px;
+    line-height: 3.2em;
     margin: 0 2px;
 }
 
@@ -48,7 +48,8 @@
     background-color: #D1AB7D;
     border-style: none;
     padding: 7px;
-    border-radius:  5px;
+    border-radius: 5px;
+    outline: none;
 }
 
 .search::placeholder {
@@ -63,7 +64,8 @@
 .link {
     color: #232A2F;
     text-transform: uppercase;
-    font-size: 11pt;
+    font-weight: 500;
+    font-size: 1rem;
     padding: 7px 5px;
 }
 
@@ -87,7 +89,7 @@
     display: none;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 830px) {
     .item {
         font-size: 12pt;
     }
