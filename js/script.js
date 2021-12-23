@@ -17,20 +17,26 @@
     });
 })();
 
+//cookies
 (function () {
-    window.addEventListener('load', (e) => {
-        e.preventDefault();
-        const parent = document.querySelector('.main');
-        /* const caixaTexto = document.createElement('div');
-        caixaTexto.innerHTML = `<p>A Yuusha-desu utiliza cookies para melhorar a experiência do usuário. Ao continuar,
-        você concorda com a nossa <a href="./legal/privacy-policy.html">política de privacidade.</a></p>`;
-        caixaTexto.style.backgroundColor = '#000';
-        caixaTexto.style.color = '#fff';
-        caixaTexto.style.padding = '2rem';
-        caixaTexto.style.width = '80%';
-        caixaTexto.style.borderRadius = '5px';
-        caixaTexto.style.textAlign = 'center';
+    const btnAccept = document.querySelector('.btn-accept');
+    const btnDenny = document.querySelector ('.btn-denny');
+    const modal = document.querySelector('.cookies-content');
 
-        parent.appendChild(caixaTexto) */
-    })
+    //procura os dados no local storage
+    function getPref () {
+        const localPref = JSON.parse(window.localStorage.getItem('cookies-pref'));
+        if (localPref) {
+            modal.style.display = 'none';
+        }
+    }
+    getPref ();
+
+    //salva os dados no local storage
+    function savePref () {
+        modal.style.display = 'none';
+        window.localStorage.setItem('cookies-pref', JSON.stringify('cookiesAccepted'));
+    }
+
+    btnAccept.addEventListener ('click', savePref);
 })();

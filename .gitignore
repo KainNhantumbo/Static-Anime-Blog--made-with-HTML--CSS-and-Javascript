@@ -1,3 +1,4 @@
-./.vscode
-./odf.txt
-./docs/
+.vscode
+odf.txt
+docs/
+log.txt

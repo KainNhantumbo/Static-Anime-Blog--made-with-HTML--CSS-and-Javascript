@@ -40,7 +40,7 @@
             const location = window.location.href;
             
             if (url === location) {
-                location.replace('/pages','');
+                location.replace('/pages', null);
                 objData.linkDaPostagem = location;
             }
         }

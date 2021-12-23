@@ -73,4 +73,5 @@ h1,h2 {
     text-align: start;
     line-height: 1.8rem;
     font-size: 12pt;
+    font-weight: 400 !important;
 }

@@ -1,10 +1,16 @@
+:root {
+    --darker: #232A2F;
+    --white: #FFFFFF;
+    --cor-principal: #DC7772;
+}
+
 .box-footer {
     width: 100%;
     height: auto;
-    background-color: #232A2F;
+    background-color: var(--darker);
     margin-top: 25px;
-    border-top: 2px solid #DC7772;
-    box-shadow: -1px 1px 5px #232A2F;
+    border-top: 2px solid var(--cor-principal);
+    box-shadow: -0.5px 1px 3px 1px var(--darker);
 }
 
 .box-ancoras {
@@ -15,13 +21,14 @@
 }
 
 .ancoras-footer {
-    color: #ffff;
+    color: var(--white);
     margin-top: px;
     padding: 10px 0;
+    font-weight: 400;
 }
 
 .ancoras-footer:hover {
-    color: #DC7772;
+    color: var(--cor-principal);
     transition: 0.3s ease;
 }
 
@@ -29,7 +36,8 @@
     margin-top: 5px;
     padding-bottom: 10px;
     font-size: 10pt;
-    color: #ffff;
+    color: var(--white);
     letter-spacing: 0.2px;
     text-align: center;
+    font-weight: 400;
 }

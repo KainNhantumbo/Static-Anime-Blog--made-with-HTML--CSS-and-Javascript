@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --sombra:#D1D1D1;
+    --white: #FFFFFF;
+    --cor-fundo: #F3F5F9;
+    --cor-principal: #DC7772;
+    --black: #000;
+}
 
 body {
     width: 100%;
     box-sizing: border-box;
-    background-color: #F3F5F9;
+    background-color: var(--cor-fundo) ;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -17,7 +24,7 @@ h1,h4{
 }
 
 h4{
-    color: #DC7772;
+    color: var(--cor-principal);
     font-size: .9rem;
     font-weight: 600;
 }
@@ -35,14 +42,14 @@ h4{
     width: 60%;
     margin-left: 5%;
     border-radius: 7px;
-    background-color: #FFFFFF;
+    background-color: var(--white);
 }
 
 .imagem-grande {
     max-width: 96%;
     border-radius: 7px;
     margin: 2%;
-    box-shadow: 1px 1px 5px #D1D1D1;
+    box-shadow: 1px 1px 5px var(--sombra);
 }
 
 .imagem-miniatura {
@@ -50,11 +57,11 @@ h4{
     border-radius: 7px;
     margin-left: 5%;
     margin-top: -20%;
-    box-shadow: 1px 1px 5px rgb(100, 100, 100);
+    box-shadow: 1px 1px 5px var(--sombra);
 }
 
 .imagem-miniatura:hover , .preview-image:hover {
-    box-shadow: .5px .5px 15px #D1D1D1;
+    box-shadow: .5px .5px 15px var(--sombra);
     transition: .3s ease;
 }
 
@@ -62,7 +69,7 @@ h4{
     width: 96%;
     height: auto;
     margin: 2%;
-    box-shadow: 1px 1px 5px #D1D1D1;
+    box-shadow: 1px 1px 5px var(--sombra);
     border-radius: 7px;
     box-sizing: border-box;
     user-select: none;
@@ -72,9 +79,9 @@ h4{
     width: 100%;
     height: auto;
     border-radius: 7px 7px 5px 5px;
-    background-color: #DC7772;
-    box-shadow: 1px 1px 5px #D1D1D1;
-    color: #FFFFFF;
+    background-color: var(--cor-principal);
+    box-shadow: 1px 1px 5px var(--sombra);
+    color: var(--white);
     font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -86,6 +93,7 @@ h4{
     width: 100%;
     height: auto;
     font-size: .9rem;
+    font-weight: 400;
     padding: 1% 15px;
     font-size: 100%;
     line-height: 1.3rem;
@@ -96,7 +104,7 @@ h4{
 }
 
 .rows-dark:hover, .rows-white:hover{
-    background-color:#D1D1D1;
+    background-color: var(--sombra);
 }
 
 .texto {
@@ -104,25 +112,27 @@ h4{
     text-align: justify;
     line-height: 1.8rem;
     font-size: 1rem;
+    font-weight: 400 !important;
 }
 
 strong {
-    font-weight: 600;
+    font-weight: 500 !important;
 }
 
 video {
     max-width: 100%;
     border-radius: 7px;
-    box-shadow: 1px 1px 5px #D1D1D1;
+    box-shadow: 1px 1px 5px var(--sombra);
+    cursor: pointer;
 }
 
 .descarregar {
     width: 96%;
     height: auto;
     margin: 2%;
-    box-shadow: 1px 1px 5px #D1D1D1;
+    box-shadow: 1px 1px 5px var(--sombra);
     border-radius: 7px;
-    border-color: #DC7772;
+    border-color: var(--cor-principal);
     border-style: solid;
     border-width: 0 5px;
     font-weight: 500;
@@ -134,18 +144,18 @@ video {
 
 .links {
     text-decoration: none;
-    color: black;
+    color: var(--black);
     margin: 1%;
     padding: 1% 1%;
-    border: 2px solid #DC7772;
+    border: 2px solid var(--cor-principal);
     border-radius: 7px;
     text-align: center;
 }
 
 .links:hover {
-    background: #DC7772;
-    color: #FFFFFF;
-    box-shadow: .5px .5px 12px #D1D1D1;
+    background: var(--cor-principal);
+    color: var(--white);
+    box-shadow: .5px .5px 12px var(--sombra);
     transition: .5s ease;
 }
 
@@ -159,14 +169,14 @@ video {
     margin-left: 2%;
     padding-bottom: .5rem;
     border-radius: 7px;
-    background-color: #FFFFFF;
+    background-color: var(--white);
 }
 
 .blocos-laterais {
     max-width: 96%;
     height: auto;
     margin: 2%;
-    box-shadow: 1px 1px 5px #D1D1D1;
+    box-shadow: 1px 1px 5px var(--sombra);
     border-radius: 7px;
 }
 
@@ -174,7 +184,7 @@ video {
     max-width: 96%;
     height: auto;
     padding: 7px;
-    box-shadow: 1px 1px 5px #D1D1D1;
+    box-shadow: 1px 1px 5px var(--sombra);
     margin: 10px;
     border-radius: 5px;
     display: flex;
@@ -201,24 +211,23 @@ video {
 }
 
 .ancoras-laterais:hover {
-    color: #DC7772;
+    color: var(--cor-principal);
     transition: 0.3s ease;
 }
-
 
 .rows_head-lateral {
     width: 100%;
     height: auto;
     border-radius: 7px 7px 0px 0px;
-    background-color: #FFFFFF;
-    box-shadow: 1px 1px 5px #D1D1D1;
-    color: #DC7772;
+    background-color: var(--white);
+    box-shadow: 1px 1px 5px var(--sombra);
+    color: var(--cor-principal);
     font-size: 100%;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 20%;
     padding: 2% 15px;
-    border-bottom: 3px solid #DC7772;
+    border-bottom: 3px solid var(--cor-principal);
 }
 
 .flag_count-container {
