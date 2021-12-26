@@ -17,13 +17,14 @@ h1,h2 {
 }
 
 strong {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .subtitulos {
     margin-top: 20px;
     margin-left: 3%;
-    font-size: 16pt;
+    font-size: 1.2rem;
+    font-weight: 500 !important;
 }
 
 .--subtitulos {
