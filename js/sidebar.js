@@ -12,17 +12,9 @@
         rowsHeadLateral.textContent = 'Recomendado';
         blocoLateral.appendChild(rowsHeadLateral);
 
-        construtor (blocoLateral,'./pages/Adachi-to-shimamura.html',
-        '../images/imagens-dos-posts/post1/img.miniatura.jpg',
-        `Adachi to Shimamura<br><br>Comédia, Romance, Yuri`
-        );
-
-        construtor (blocoLateral,'./pages/Adachi-to-shimamura.html',
-        '../images/imagens-dos-posts/post1/img.miniatura.jpg',
-        `Adachi to Shimamura<br><br>Comédia, Romance, Yuri`
-        );
         
-        construtor (blocoLateral,'./pages/Adachi-to-shimamura.html',
+        
+        construtor (blocoLateral,'./pages/adachi-to-shimamura.html',
         '../images/imagens-dos-posts/post1/img.miniatura.jpg',
         `Adachi to Shimamura<br><br>Comédia, Romance, Yuri`
         );

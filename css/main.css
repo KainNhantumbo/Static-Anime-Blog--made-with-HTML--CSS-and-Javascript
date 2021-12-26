@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --sombra:#D1D1D1;
+    --white: #FFFFFF;
+    --cor-fundo: #F3F5F9;
+    --cor-principal: #DC7772;
+    --black: #000;
+    --darker: #232A2F;
+}
+
 body {
     width: 100%;
     box-sizing: border-box;
-    background-color: #F3F5F9;
+    background-color: var(--cor-fundo);
     font-family: 'Montserrat', sans-serif;
-    background-image: url(/images/main.back.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
 }
 
 main {
@@ -19,16 +25,35 @@ h1{
     padding: 0;
 }
 
+@keyframes main-top--image {
+    to {
+        top: initial;
+        opacity: initial;
+        transform: translateY(0);
+    }
+}
+
 .main-top--image {
-    width: 96%;
-    margin: 0 2%;
-    border-radius: 7px;
-    box-shadow: .5px .5px 1px black;
+    width: 98%;
+    margin: 0 1%;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 0px var(--sombra);
+    animation: main-top--image 1.6s ease forwards;
+    opacity: 0;
+    transform: translateY(-2rem);
+}
+
+.main-top--image:hover {
+    /* backdrop-filter: blur(0.7); */
+    opacity: 0.8;
+    transition: 0.4 ease;
+    
 }
 
 .container {
     display: flex;
     flex-direction: row;
+    margin-top: 1rem;
 }
 
 .container-principal {
@@ -37,23 +62,44 @@ h1{
     flex-direction: column;
     flex-wrap: wrap;
     width: 60%;
-    margin-left: 5%;
+    margin-left: 2%;
     border-radius: 7px;
     background-color: #FFFFFF;
 }
 
 .preview-image:hover {
-    box-shadow: .5px .5px 15px #D1D1D1;
+    box-shadow: .5px .5px 15px var(--sombra);
     transition: .3s ease;
 }
 
 .info-anime {
     width: 96%;
     height: auto;
-    margin: 2%;
-    box-shadow: 1px 1px 5px #D1D1D1;
+    margin: 2%;padding-bottom: .5em;
+    box-shadow: 1px 1px 5px var(--sombra);
     border-radius: 7px;
     box-sizing: border-box;
+}
+
+.rows-head {
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    border-radius: 7px 7px 5px 5px;
+    background-color: var(--cor-principal);
+    box-shadow: 1px 1px 5px var(--sombra);
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 20%;
+    padding: 1% 15px;
+}
+
+.icons {
+    width: 1em;
+    float: right;
+    
 }
 
 .texto {
@@ -64,34 +110,94 @@ h1{
 
 .links-lista {
     text-decoration: none;
-    color: #000000;
+    color: var(--black);
     margin-left: 12px;
     line-height: 1.6rem;
 }
 
 .links-lista:hover {
-    color: #DC7772;
+    color: var(--cor-principal);
     font-size: larger;
     transition: .3s ease;
 }
 
+/*=============== Blocos de anime ===========*/
+.container-blocos--anime {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: .5em;
+}
+
+.blocos-anime {
+    width: 9em;
+    height: 12rem;
+    display: inline-block;
+    margin: 2%;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 1px var(--sombra);
+}
+
+.blocos-anime:hover {
+    transform: translateY(-.8rem);
+    transition: all .2s ease;
+}
+
+.bloco-image {
+    display: inline-block;
+    width: 9rem;
+    max-height: 12rem;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.bloco-image:hover {
+    filter:opacity(.7);
+    transition: .5s ease;
+}
+
+.container-descricao {
+    width: 9em;
+    height: 4rem;
+    display: inline-block;
+    padding: .2em;
+    border-radius: 0 0 3px 3px;
+    background-color: var(--white);
+    backdrop-filter: blur(2px);
+    opacity: 0.7;
+    position: relative;
+    z-index: 5;
+    transform: translateY(-4rem);
+}
+
+.bloco-descricao {
+    line-height: 1.2rem;
+    font-size: .8em;
+    font-weight: 500;
+    word-wrap: break-word;
+    text-align: center;
+    color: var(--black);
+}
+/*=============================================*/
+
 /* ----------lateral------------ */
 
 .container-lateral {
-    width: 32%;
+    width: 34%;
     height: auto;
     display: flex;
     flex-direction: column;
-    margin-left: 2%;
+    margin-left: 1%;
     border-radius: 7px;
-    background-color: #FFFFFF;
+    background-color: var(--white);
 }
 
 .blocos-laterais {
     max-width: 96%;
     height: auto;
     margin: 2%;
-    box-shadow: 1px 1px 5px #D1D1D1;
+    box-shadow: 1px 1px 5px var(--sombra);
     border-radius: 7px;
 }
 
@@ -99,7 +205,7 @@ h1{
     max-width: 96%;
     height: auto;
     padding: 7px;
-    box-shadow: 1px 1px 5px #D1D1D1;
+    box-shadow: 1px 1px 5px var(--sombra);
     margin: 10px;
     border-radius: 5px;
     display: flex;
@@ -119,14 +225,14 @@ h1{
 }
 
 .ancoras-laterais {
-    color: black;
+    color: var(--black);
     margin-top: px;
     padding: 10px 0;
     font-weight: 500;
 }
 
 .ancoras-laterais:hover {
-    color: #DC7772;
+    color: var(--cor-principal);
     transition: 0.3s ease;
 }
 
@@ -134,15 +240,15 @@ h1{
     width: 100%;
     height: auto;
     border-radius: 7px 7px 0px 0px;
-    background-color: #FFFFFF;
-    box-shadow: 1px 1px 5px #D1D1D1;
-    color: #DC7772;
+    background-color: var(--white);
+    box-shadow: 1px 1px 5px var(--sombra);
+    color: var(--cor-principal);
     font-size: 100%;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 20%;
     padding: 2% 15px;
-    border-bottom: 3px solid #DC7772;
+    border-bottom: 3px solid var(--cor-principal);
 }
 
 .flag_count-container {
