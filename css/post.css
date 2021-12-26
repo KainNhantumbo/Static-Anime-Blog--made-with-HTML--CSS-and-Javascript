@@ -201,6 +201,7 @@ video {
     padding: 5px;
     margin-top: 2%;
     margin-left: 2vw;
+    word-wrap: break-word;
 }
 
 .ancoras-laterais {
