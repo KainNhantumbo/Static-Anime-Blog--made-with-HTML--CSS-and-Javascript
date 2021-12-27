@@ -48,13 +48,26 @@ h1,h2 {
     background-color: #FFFFFF;
 }
 
+@keyframes info-anime {
+    to {
+        top: initial;
+        opacity: initial;
+        transform: translateY(0);
+        transform: skew(0);
+    }
+}
+
 .info-anime {
-    max-width: 96%;
+    width: 96%;
     height: auto;
-    margin: 2%;
-    box-shadow: 1px 1px 5px #D1D1D1;
+    margin: 2%;padding-bottom: .5em;
+    box-shadow: 1px 1px 5px var(--sombra);
     border-radius: 7px;
     box-sizing: border-box;
+
+    animation: info-anime .9s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+    transform: translateY(4rem);
+    opacity: 0;
 }
 
 .rows-head {

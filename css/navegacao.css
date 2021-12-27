@@ -89,6 +89,12 @@
 
 .icon {
     display: none;
+
+}
+
+.icons {
+    width: 1em;
+    float: right;
 }
 
 .checkbtn {
@@ -108,8 +114,8 @@
 
     .icon {
         display: block;
-        height: 45px;
-        margin-top: 3px;
+        width: 1.8rem;
+        margin-top: .5rem;
     }
 
     .icon:active {

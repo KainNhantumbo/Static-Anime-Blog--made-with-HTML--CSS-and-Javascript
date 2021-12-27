@@ -37,13 +37,25 @@ h1{
     transition: .3s ease;
 }
 
+@keyframes info-anime {
+    to {
+        top: initial;
+        opacity: initial;
+        transform: translate(0,0);
+    }
+}
+
 .info-anime {
     width: 96%;
     height: auto;
-    margin: 2%;
-    box-shadow: 1px 1px 5px #D1D1D1;
+    margin: 2%;padding-bottom: .5em;
+    box-shadow: 1px 1px 5px var(--sombra);
     border-radius: 7px;
     box-sizing: border-box;
+
+    animation: info-anime .9s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+    transform: translate(-4rem, 6rem);
+    opacity: 0;
 }
 
 .rows-head {

@@ -38,7 +38,7 @@ h1{
     margin: 0 1%;
     border-radius: 3px;
     box-shadow: 0px 0px 5px 0px var(--sombra);
-    animation: main-top--image 1.6s ease forwards;
+    animation: main-top--image .8s ease-out forwards;
     opacity: 0;
     transform: translateY(-2rem);
 }
@@ -72,6 +72,14 @@ h1{
     transition: .3s ease;
 }
 
+@keyframes info-anime {
+    to {
+        top: initial;
+        opacity: initial;
+        transform: translateX(0);
+    }
+}
+
 .info-anime {
     width: 96%;
     height: auto;
@@ -79,6 +87,10 @@ h1{
     box-shadow: 1px 1px 5px var(--sombra);
     border-radius: 7px;
     box-sizing: border-box;
+
+    animation: info-anime .8s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+    transform: translateX(-40rem);
+    opacity: 0;
 }
 
 .rows-head {
@@ -94,12 +106,6 @@ h1{
     text-transform: uppercase;
     letter-spacing: 20%;
     padding: 1% 15px;
-}
-
-.icons {
-    width: 1em;
-    float: right;
-    
 }
 
 .texto {
@@ -130,13 +136,27 @@ h1{
     gap: .5em;
 }
 
+@keyframes blocos-animation {
+    to {
+        opacity: initial;
+        width: 9em;
+        height: 12rem;
+    }
+}
+
+.blocos-anime, .bloco-image{
+    animation: blocos-animation .5s ease-in forwards;
+    animation-delay: .8s;
+}
+
 .blocos-anime {
-    width: 9em;
-    height: 12rem;
+    width: 0;
+    height: 0;
     display: inline-block;
     margin: 2%;
     border-radius: 3px;
     box-shadow: 0px 0px 5px 1px var(--sombra);
+    opacity: 0;
 }
 
 .blocos-anime:hover {
@@ -146,8 +166,8 @@ h1{
 
 .bloco-image {
     display: inline-block;
-    width: 9rem;
-    max-height: 12rem;
+    width: 0;
+    height: 0;
     border-radius: 3px;
     overflow: hidden;
 }
