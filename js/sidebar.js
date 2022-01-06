@@ -16,7 +16,17 @@
         
         construtor (blocoLateral,'./pages/adachi-to-shimamura.html',
         '../images/imagens-dos-posts/post1/img.miniatura.jpg',
-        `Adachi to Shimamura<br><br>Comédia, Romance, Yuri`
+        `Adachi to Shimamura<br><br>Comédia, Romance, Shoujo Ai <br><br> 1 <sup>a</sup> Temporada`
+        );
+
+        construtor (blocoLateral,'./pages/wataten.html',
+        '../images/imagens-dos-posts/100470wataten.jpg',
+        `Watashi ni Tenshi ga Maiorita! (Wataten)<br><br>Comédia, Shoujo Ai, Slice of Life.<br><br> 1 <sup>a</sup> Temporada`
+        );
+
+        construtor (blocoLateral,'./pages/sora-yori-mo-tooi-basho.html',
+        '../images/imagens-dos-posts/89879sorayori.jpg',
+        `Sora yori mo Tooi Basho<br><br>Aventura, Comédia, Drama.<br><br> 1 <sup>a</sup> Temporada`
         );
     } 
 
@@ -27,7 +37,7 @@
             textoDoLink,
         }
 
-        function verificaHrefLocation () {
+        const verificaHrefLocation = () => {
             const url = document.referrer;
             const location = window.location.href;
             

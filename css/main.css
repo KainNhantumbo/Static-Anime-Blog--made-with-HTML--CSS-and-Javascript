@@ -284,12 +284,12 @@ h1{
     }
 
     .container-principal {
-        width: 90%;
+        width: 96%;
     }
 
     .container-lateral {
-        width: 90%;
-        margin-left: 5%;
+        width: 96%;
+        margin-left: 2%;
         margin-top: 10px;
     }
 }

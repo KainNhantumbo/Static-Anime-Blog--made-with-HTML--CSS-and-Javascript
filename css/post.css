@@ -52,6 +52,15 @@ h4{
     box-shadow: 1px 1px 5px var(--sombra);
 }
 
+.texto-titular {
+    float: right;
+    padding: 1rem 3% 0 4rem;
+    font-weight: 600;
+    line-height: 2rem;
+    font-size: 1.6rem;
+    color: var(--cor-principal);
+}
+
 .imagem-miniatura {
     width: 25%;
     border-radius: 7px;
@@ -70,14 +79,13 @@ h4{
         top: initial;
         opacity: initial;
         transform: translateY(0);
-        transform: skew(0);
     }
 }
 
 .info-anime {
     width: 96%;
     height: auto;
-    margin: 2%;padding-bottom: .5em;
+    margin: 2%;
     box-shadow: 1px 1px 5px var(--sombra);
     border-radius: 7px;
     box-sizing: border-box;
@@ -136,6 +144,7 @@ video {
     border-radius: 7px;
     box-shadow: 1px 1px 5px var(--sombra);
     cursor: pointer;
+    outline-color: var(--cor-principal);
 }
 
 .descarregar {
@@ -256,6 +265,10 @@ video {
     .container-principal {
         width: 90%;
     }
+    
+    .texto-titular {
+        font-size: 1.4rem;
+    }
 
     .container-lateral {
         width: 90%;
@@ -269,6 +282,11 @@ video {
         text-align: start;
         line-height: 1.5rem;
         font-size: 0.9rem;
+    }
+
+    .texto-titular {
+        font-weight: 500;
+        font-size: .9rem;
     }
 
     .rows-head {

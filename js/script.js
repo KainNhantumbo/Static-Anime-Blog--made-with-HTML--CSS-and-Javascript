@@ -11,7 +11,6 @@
             var wordContainer = document.createElement('div');
             main.append(wordContainer);
 
-
             console.log(main)
         }
     });
@@ -20,12 +19,12 @@
 //cookies
 (function () {
     const btnAccept = document.querySelector('.btn-accept');
-    const btnDenny = document.querySelector ('.btn-denny');
     const modal = document.querySelector('.cookies-content');
 
     //procura os dados no local storage
     function getPref () {
         const localPref = JSON.parse(window.localStorage.getItem('cookies-pref'));
+
         if (localPref) {
             modal.style.display = 'none';
         }

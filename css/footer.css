@@ -4,6 +4,14 @@
     --cor-principal: #DC7772;
 }
 
+.arrow {
+    position: relative;
+}
+
+.arrow-up {
+   display: none;
+}
+
 .box-footer {
     width: 100%;
     height: auto;
@@ -40,4 +48,18 @@
     letter-spacing: 0.2px;
     text-align: center;
     font-weight: 400;
+}
+
+@media screen and (max-width: 500px) {
+    .arrow-up {
+        display: block;
+        width: 1.6em;
+        box-shadow: 0px 0px 3px var(--darker);
+        background-color: var(--white);
+        border-radius: 30px;
+        position: fixed;
+        right: 2.8rem;
+        bottom: 3rem;
+        z-index: 10;
+    }    
 }
