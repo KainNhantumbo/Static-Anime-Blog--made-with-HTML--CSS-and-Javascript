@@ -39,3 +39,17 @@
 
     btnAccept.addEventListener ('click', savePref);
 })();
+
+//script do caroussel
+(function () {
+    document.querySelector('.--images-container').addEventListener('wheel', e=> {
+        e.preventDefault();
+        console.log(e)
+        if (e.deltaY < 0) {
+           e.target.scrollBy(100,0);
+        }else{
+            e.target.scrollBy(-100,0)
+        } 
+    })
+
+})();

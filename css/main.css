@@ -5,6 +5,7 @@
     --white: #FFFFFF;
     --cor-fundo: #F3F5F9;
     --cor-principal: #DC7772;
+    --light-brown: #D1AB7D;
     --black: #000;
     --darker: #232A2F;
 }
@@ -33,22 +34,60 @@ h1{
     }
 }
 
-.main-top--image {
-    width: 98%;
-    margin: 0 1%;
-    border-radius: 3px;
+/* .caroussel-container {
+    
+} */
+
+.--images-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    margin: 0 1vw;
+    border-radius: 5px;
+}
+
+.--image-item {
+    width: 100vw;
+    flex: none;
+    pointer-events: none;
+    border-radius: 5px;
+}
+
+.--image {
+    width: 98vw;
     box-shadow: 0px 0px 5px 0px var(--sombra);
     animation: main-top--image .8s ease-out forwards;
     opacity: 0;
     transform: translateY(-2rem);
+    border-radius: 5px;
+    object-fit: cover;
+    scroll-snap-align: start;
 }
 
-.main-top--image:hover {
-    /* backdrop-filter: blur(0.7); */
-    opacity: 0.8;
-    transition: 0.4 ease;
-    
+/* .caroussel-btns {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: -25vw;
+    gap: 60vw;
+    z-index: 5;
 }
+
+.btn-prev--box, .btn-next--box {
+    width: 4vw;
+    border-radius: 3px;
+    border: 1px solid var(--cor-principal);
+    background: var(--cor-fundo);
+    padding: 4vw;
+
+}
+
+.btn-prev, .btn-next {
+    width: 3vw;
+    display: inline-block;
+    
+} */
 
 .container {
     display: flex;
@@ -59,8 +98,7 @@ h1{
 .container-principal {
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     width: 60%;
     margin-left: 2%;
     border-radius: 7px;
