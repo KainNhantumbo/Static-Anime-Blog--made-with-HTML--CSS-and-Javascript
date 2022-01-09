@@ -21,14 +21,14 @@
     background-color: var(--light-brown);
     padding: 2rem;
     opacity: 0.1;
-    width: .8vw;
+    width: .5vw;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--cor-principal);
     border-radius: 7px;
     padding: 2em;
-    width: 5px;
+    width: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
