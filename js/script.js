@@ -21,7 +21,7 @@
     const btnAccept = document.querySelector('.btn-accept');
     const modal = document.querySelector('.cookies-content');
 
-    //procura os dados no local storage
+    //procura os dados no local storage function
     function getPref () {
         const localPref = JSON.parse(window.localStorage.getItem('cookies-pref'));
 
