@@ -1,11 +1,13 @@
-# Static anime website 
-This is a static website made entirely with HTML, CSS and a little flavor of vanilla Javascript to push may programming skills up. 
+# Static anime website
+
+This is a static website made entirely with HTML, CSS and a little flavor of vanilla Javascript to push may programming skills up.
 
 You can find a deployed version here: [https://github.com/KainNhantumbo](https://github.com/KainNhantumbo 'Visit website'). I hope you like it, this is one of my important projects that made me feel passionate and enjoy my programminng learning journey.
 
 Here a some screenshots:
-
-
+![](/docs/img/capture00.jpeg)
+![](/docs/img/capture01.jpeg)
+![](/docs/img/capture02.jpeg)
 ## Contact
 
 **E-mail:** [nhantumbok@gmail.com](nhantumbok@gmail.com 'Send an email')\
@@ -18,5 +20,6 @@ Here a some screenshots:
 
 ## License
 
-Licensed under MIT  
+Licensed under GNU GENERAL PUBLIC LICENSE
+Version 3  
 **Copyright &copy; 2022 Kain Nhantumbo.**
