@@ -2,7 +2,10 @@
 
 This is a static website made entirely with HTML, CSS and a little flavor of vanilla Javascript to push may programming skills up.
 
-You can find a deployed version here: [https://kainnhantumbo.github.io/Static-Anime-Blog--made-with-HTML--CSS-and-Javascript](https://kainnhantumbo.github.io/Static-Anime-Blog--made-with-HTML--CSS-and-Javascript 'Visit website'). I hope you like it, this is one of my important projects that made me feel passionate and enjoy my programminng learning journey.
+You can find a deployed version here: [https://kainnhantumbo.github.io/Static-Anime-Blog--made-with-HTML--CSS-and-Javascript](https://kainnhantumbo.github.io/Static-Anime-Blog--made-with-HTML--CSS-and-Javascript 'Visit website')  
+
+
+I hope you like it, this is one of my important projects that made me feel passionate and enjoy my programminng learning journey.
 
 Here a some screenshots:
 ![](/docs/img/capture00.jpeg)
